@@ -10,8 +10,7 @@ const orderRoutes = require("./api/routes/orders")
 mongoose.connect(
   "mongodb+srv://node-shop:" +
     process.env.MONGO_ATLAS_PW +
-    "@node-rest-shop.vhxs8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  { useMongoClient: true }
+    "@node-rest-shop.vhxs8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 )
 
 app.use(morgan("dev"))
